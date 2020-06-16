@@ -1,22 +1,23 @@
-	func selectSort(_ nums: inout [Int]) {
-        for i in 0..<nums.count {
-            var min = nums[i]
-            var minIndex = i
-            var j = i+1
-            while j < nums.count {
-                if nums[j] < min {
-                    min = nums[j]
-                    minIndex = j
-                }
-                j += 1
+```
+func selectSort(_ nums: inout [Int]) {
+    for i in 0..<nums.count {
+        var min = nums[i]
+        var minIndex = i
+        var j = i+1
+        while j < nums.count {
+            if nums[j] < min {
+                min = nums[j]
+                minIndex = j
             }
-            print("swap \(i):\(nums[i]) \(minIndex):\(nums[minIndex])")
-            nums.swapAt(i, minIndex)
-            print("\(nums)")
+            j += 1
         }
-        
+        print("swap \(i):\(nums[i]) \(minIndex):\(nums[minIndex])")
+        nums.swapAt(i, minIndex)
+        print("\(nums)")
     }
-	
+}
+```
+```	
 	func insertSort(_ nums:inout [Int]) {
 	        for i in 1..<nums.count  {
 	            let key = nums[i]
@@ -38,3 +39,4 @@
 	            print("loop \(nums)")
 	        }
 	    }
+```
